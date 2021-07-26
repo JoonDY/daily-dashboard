@@ -1,0 +1,68 @@
+:root {
+  --color-light: #fff;
+  --color-dark: #555;
+  --color-accent: rgb(255, 236, 239);
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.5rem;
+  --fs-h3: 2rem;
+  --fs-p: 1.5rem;
+}
+
+/* Standard */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: var(--color-dark);
+  line-height: 1.5;
+  background-color: var(--color-light);
+  text-align: center;
+}
+
+a {
+  color: var(--color-dark);
+  text-decoration: none;
+  font-size: var(--fs-p);
+  font-family: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  margin: 2rem 0;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+p {
+  font-size: var(--fs-p);
+}
