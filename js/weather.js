@@ -1,5 +1,4 @@
 import { API_KEY_WEATHER } from "./key.js";
-const weather = document.getElementById('weather');
 
 export const getLocation = (zip, unit='imperial') => {
   let long;
@@ -27,6 +26,7 @@ const getWeather = async(url) => {
 }
 
 const createWeather = (data) => {
+  const weather = document.getElementById('weather');
   const div = document.createElement('div');
   const currentTemp = document.createElement('p')
   const futureTemps = document.createElement('div')

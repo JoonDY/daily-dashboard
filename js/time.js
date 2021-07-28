@@ -1,6 +1,5 @@
-const time = document.getElementById('time');
-
 export const createTime = () => {
+  const time = document.getElementById('time');
   let today = new Date();
   let hour = today.getHours();
   let min = today.getMinutes();

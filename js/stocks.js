@@ -1,9 +1,8 @@
 import { API_KEY_STOCKS } from "./key.js";
 
-const stocks = document.getElementById('stocks');
-const url = `https://api.twelvedata.com/time_series?symbol=SPX&interval=1day&apikey=${API_KEY_STOCKS}`
-
 export const getStocks = async() => {
+  const stocks = document.getElementById('stocks');
+  const url = `https://api.twelvedata.com/time_series?symbol=SPX&interval=1day&apikey=${API_KEY_STOCKS}`
   const res = await fetch(url);
   const data = await res.json();
   createStock(data);
