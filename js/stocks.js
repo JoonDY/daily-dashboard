@@ -6,7 +6,6 @@ const url = `https://api.twelvedata.com/time_series?symbol=SPX&interval=1day&api
 export const getStocks = async() => {
   const res = await fetch(url);
   const data = await res.json();
-  console.log(data)
   createStock(data);
 };
 
