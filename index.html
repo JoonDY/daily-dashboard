@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
 
+    <title>Daily Dash</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome Today.</h1>
+    </header>
 
-  <title>Daily Dash</title>
-</head>
-<body>
-  <header>
-    <h1>Welcome Today.</h1>
-  
-  </header>
+    <section class="time card">
+      <h2 id="time"></h2>
+    </section>
+    <div class="flex">
+      <section class="weather card" id="weather">
+        <h2>Weather</h2>
+      </section>
 
-  <section class="time card" >
-  <h2 id="time"></h2>
-  </section>
-  <div class='flex'>
-    <section class="weather card" id="weather">
-      <h2>Forecast</h2>
+      <section class="stocks card" id="stocks">
+        <h2>S&P500</h2>
+      </section>
+    </div>
 
+    <section class="bored card">
+      <h2>Do Something</h2>
+      <p id="bored"></p>
+      <button id="activity-btn">Refresh</button>
     </section>
 
-    <section class="stocks card" id="stocks">
-      <h2>S&P500</h2>
-
-    </section>
-  </div>
- 
-
-  <section class="bored card">
-    <h2>Do Something</h2>
-    <p id="bored"></p>
-    <button id="activity-btn">Refresh</button>
-
-  </section>
-
-  <script src="./js/main.js" type="module"></script>
-</body>
+    <script src="./js/main.js" type="module"></script>
+  </body>
 </html>
