@@ -1,5 +1,3 @@
-import { API_KEY_WEATHER } from './key.js';
-
 export const getLocation = (zip, unit = 'imperial') => {
   let long;
   let lat;
