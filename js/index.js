@@ -2,7 +2,6 @@ import { createTime } from './time.js';
 import { getLocation } from './weather.js';
 import { getStocks } from './stocks.js';
 import { getActivity } from './activity.js';
-require('dotenv').config();
 
 const initApp = () => {
   createTime();
