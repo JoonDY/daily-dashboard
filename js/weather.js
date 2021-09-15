@@ -10,11 +10,11 @@ export const getLocation = (zip, unit = 'imperial') => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
 
-      const API = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY_WEATHER}&units=${units}`;
+      const API = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${process.env.API_KEY_WEATHER}&units=${units}`;
       getWeather(API);
     });
   } else {
-    const API = `http://api.openweathermap.org/data/2.5/weather?zip=${zip}&appid=${API_KEY_WEATHER}&units=${units}`;
+    const API = `http://api.openweathermap.org/data/2.5/weather?zip=${zip}&appid=${process.env.API_KEY_WEATHER}&units=${units}`;
     getWeather(API);
   }
 };
