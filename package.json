@@ -1,0 +1,22 @@
+{
+  "name": "daily-dashboard",
+  "version": "1.0.0",
+  "description": "Quick overview of today's weather, 1 day SP500 change, and a random activity for the day.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoonDY/daily-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoonDY/daily-dashboard/issues"
+  },
+  "homepage": "https://github.com/JoonDY/daily-dashboard#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
